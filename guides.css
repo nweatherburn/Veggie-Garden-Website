@@ -1,0 +1,81 @@
+body
+{	
+	margin: auto; 
+	width: 980px;
+	background-color: #406E48;
+}
+
+header
+{
+	color: #FFFFFF;
+	background-color:#406E48;
+}
+
+nav
+{
+	background-color: #63956C;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 16px;
+}
+
+nav ul
+{
+    list-style:none;
+    width:100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav li
+{
+    float:left;
+    width: 33%;
+    line-height:37px;
+}
+
+nav li:hover
+{
+	background-color: #68BA76
+}
+
+nav a
+{
+	text-decoration: none;
+    color:#FFFFFF;
+}
+
+#selected-navbar-item
+{
+	background-color: #68BA76;
+}
+
+#selected-navbar-item a
+{
+	color: #000000;
+}
+
+article
+{
+	color: #FFFFFF;
+	background-color: #63956C;
+}
+
+section
+{
+	color: #000000;
+	background-color: #63956C;
+}
+
+aside
+{	
+	color: #FFFFFF;
+	background-color: #63956C;
+}
+
+footer
+{
+	color: #000000;
+	background-color: #68BA76;
+}
