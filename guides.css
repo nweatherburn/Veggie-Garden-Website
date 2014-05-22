@@ -30,8 +30,9 @@ nav ul
 
 nav li
 {
+	display: block;
     float:left;
-    width: 33%;
+    width: 33.33333%;
     line-height:37px;
 }
 
@@ -42,6 +43,7 @@ nav li:hover
 
 nav a
 {
+	display: block;
 	text-decoration: none;
     color:#FFFFFF;
 }
@@ -53,6 +55,7 @@ nav a
 
 #selected-navbar-item a
 {
+	background-color: #68BA76;
 	color: #000000;
 }
 
@@ -78,4 +81,5 @@ footer
 {
 	color: #000000;
 	background-color: #68BA76;
+	line-height:37px;
 }
