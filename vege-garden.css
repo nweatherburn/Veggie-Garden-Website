@@ -66,10 +66,10 @@ article
 
 section
 {
+	margin: 5px 0 5px 5px;
+	padding: 10px;
 	color: #000000;
 	background-color: #63956C;
-	width: 75%;
-	float: right;
 }
 
 aside
@@ -84,6 +84,4 @@ footer
 	background-color: #68BA76;
 	line-height:37px;
 	width: 980px;
-	bottom: 0;
-	position: fixed;
 }
