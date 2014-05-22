@@ -22,7 +22,7 @@ nav
 
 nav ul
 {
-	list-style:none;
+	list-style: none;
 	width:100%;
 	padding: 0;	
 }
@@ -48,17 +48,6 @@ nav a
 	color:#FFFFFF;
 }
 
-#selected-navbar-item
-{
-	background-color: #68BA76;
-}
-
-#selected-navbar-item a
-{
-	background-color: #68BA76;
-	color: #000000;
-}
-
 article
 {
 	color: #FFFFFF;
@@ -66,7 +55,6 @@ article
 
 section
 {
-	margin: 5px 0 5px 5px;
 	padding: 10px;
 	color: #000000;
 	background-color: #63956C;
@@ -80,8 +68,9 @@ aside
 
 footer
 {
-	color: #000000;
-	background-color: #68BA76;
-	line-height:37px;
+	margin-top: 5px;
+	color: #FFFFFF;
+	background-color: #63956C;
+	line-height:40px;
 	width: 980px;
 }

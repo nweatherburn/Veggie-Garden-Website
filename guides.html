@@ -21,24 +21,47 @@
 			}
 			.video-section
 			{
+				margin: 5px 0 5px 5px;
 				width: 75%;
 				float: right;
 			}
-			.sidebar
-			{
-				width: 22%;
-				float: left;
+
+			/* The basis for the following sidebar css was found at: "http://startbootstrap.com/templates/css/simple-sidebar.css" */
+
+			.sidebar {
+  				float: left;
+  				width: 22%;
+  				list-style: none;
+  				margin: 0;
+  				padding: 0;
+			}
+
+			.sidebar li {
+  				line-height: 40px;
+  				text-indent: 20px;
+			}
+
+			.sidebar li a {
+
+  				color: #FFFFFF;
+  				display: block;
+  				text-decoration: none;
+			}
+
+			.sidebar li a:hover {
+  				color: #fff;
+  				background-color: #68BA76;
+  				text-decoration: none;
 			}
 		</style>
-
 	</head>
 	<body>
 		<header>
-			<h1 style="padding:0; margin:0">VegeGarden.co.nz</h1>
+			<h1 style="padding: 10px 0 0 0; margin:0">VegeGarden.co.nz</h1>
 		</header>
 		<nav>
 			<ul>
-				<li id="selected-navbar-item"><a href="guides.html">Guides</a></li>
+				<li><a href="guides.html">Guides</a></li>
 				<li><a href="getting-started.html">Getting Started</a></li>
 				<li><a href="documentation.html">Documentation</a></li>
 				<div style="clear:both;"></div>
@@ -47,25 +70,28 @@
 		<div style="clear:both;"></div>
 
 		<!-- Sidebar -->
-		<aside class="sidebar">
-			<ul>
+		<aside>
+			<ul class="sidebar">
 				<li>
-					Vegetables
+					<a href="#">Vegetables</a>
 				</li>
 				<li>
-					Fruits
+					<a href="#">Fruits</a>
 				</li>
 				<li>
-					Soil
+					<a href="#">Soil</a>
 				</li>
 				<li>
-					Fertiliser
+					<a href="#">Fertilizsation</a>
+				</li>
+				<li>
+					<a href="#">Irrigation</a>
+				</li>
+				<li>
+					<a href="#">Tools</a>
 				</li>
 			</ul>
 		</aside>
-
-
-
 
 		<!-- Video One -->
 		<section id="top-section", class="video-section">
@@ -131,11 +157,12 @@
 			</div>
 		</section>
 
-		<div style="clear:both"></div>
+		<div style="clear:both;"></div>
 
 		<footer>
-			<span style="float:left; padding: 0 0 0 20px; margin: 0">Nicholas Weatherburn</span>
-			<span style="float:right; padding: 0 20px 0 0; margin: 0">2692661 - nwea171</span>
+			<span style="float:left; padding: 0 0 0 5px; margin: 0">Nicholas Weatherburn</span>
+			<span style="float:right; padding: 0 5px 0 0; margin: 0">2692661 - nwea171</span>
+			<div style="clear:both;"></div>
 		</footer>
 	</body>
 </html>
