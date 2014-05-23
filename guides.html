@@ -3,6 +3,7 @@
 	<head>
 		<title>Guides</title>
 		<meta charset="UTF-8">
+		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="vege-garden.css">
 		<style type="text/css">
 			article
@@ -10,10 +11,6 @@
 				padding-top: 10px;
 			}
 
-			#top-section
-			{
-				margin-top: 0;
-			}
 			.video-title h1
 			{
 				padding: 0 0 5px 0;
@@ -50,17 +47,45 @@
 
 			.sidebar li a {
 
-  				color: #FFFFFF;
-  				display: block;
-  				text-decoration: none;
+				color: #FFFFFF;
+				display: block;
+				text-decoration: none;
 			}
 
 			.sidebar li a:hover {
-  				color: #fff;
-  				background-color: #68BA76;
-  				text-decoration: none;
+				color: #fff;
+				background-color: #68BA76;
+				text-decoration: none;
 			}
+
+			.sidebar-relative
+			{
+				position: relative;
+			}
+
+			.sidebar-fixed
+			{
+				position: fixed;
+				top: 0;
+				width: 216px;
+			}
+
 		</style>
+
+		<!-- JAVASCRIPT -->
+		<script src="jquery-2.1.1.min.js"></script>
+		<script type="text/javascript">
+        	$(window).scroll(function(){
+        		// Makes sure that the navbar on the side is always visible.
+        		if ($(window).scrollTop() > 146) {
+        			console.log('true');
+        			$('#side-navbar').addClass('sidebar-fixed');
+        		} else {
+        			console.log('false');
+        			$('#side-navbar').removeClass('sidebar-fixed');
+        		}
+        	});
+    	</script>
 	</head>
 	<body>
 		<header>
@@ -79,18 +104,18 @@
 		<article>
 			<!-- Sidebar -->
 			<aside>
-				<ul class="sidebar">
+				<ul class="sidebar" id="side-navbar">
 					<li>
-						<a href="#">Vegetables</a>
+						<a href="#vegetables">Vegetables</a>
 					</li>
 					<li>
-						<a href="#">Fruits</a>
+						<a href="#fruits">Fruits</a>
 					</li>
 					<li>
-						<a href="#">Soil</a>
+						<a href="#soil">Soil</a>
 					</li>
 					<li>
-						<a href="#">Fertilizsation</a>
+						<a href="#">Fertilization</a>
 					</li>
 					<li>
 						<a href="#">Irrigation</a>
@@ -101,8 +126,15 @@
 				</ul>
 			</aside>
 
+			<div class="group-heading">
+				<a name="vegetables"></a>
+				<h1>
+					Vegetables
+				</h1>
+			</div>
+
 			<!-- Video One -->
-			<section id="top-section", class="video-section">
+			<section class="video-section">
 				<!-- To the left -->
 				<div style="float: left; width: 32%;">
 					<div class="video-title">
@@ -113,13 +145,46 @@
 					<p>
 						Hello this is text about how awesome carrots are. Will this got above or beside the video? It will be interesting to see. It definitely goes above the video. Got beside the video please. Why is that?
 					</p>
-					<a href="article-page.html;", style="text-decoration: underline; color: #FFFFFF;">See More</a>
+					<p>
+						<a href="article-page.html", style="text-decoration: underline; color: #FFFFFF;">See More</a>
+					</p>
 				</div>
 
 				<!-- To the right -->
 				<div style="float:right; width: 67%">
 					<iframe width="490" height="276" src="https://www.youtube.com/embed/lQSccDgKX_8?rel=0" frameborder="0" allowfullscreen></iframe>
 				</div>
+			</section>
+
+			<div class="group-heading">
+				<a name="fruits"></a>
+				<h1>
+					Fruits
+				</h1>
+			</div>
+
+			<!-- Video Two -->
+			<section class="video-section">
+				<!-- To the left -->
+				<div style="float: left; width: 32%">
+					<div class="video-title">
+						<h1>
+							<a href="article-page.html">Planting Carrots</a>
+						</h1>
+					</div>
+					<p>
+						Hello this is text about how awesome carrots are. Will this got above or beside the video? It will be interesting to see. It definitely goes above the video. Got beside the video please. Why is that?
+					</p>
+					<p>
+						<a href="article-page.html", style="text-decoration: underline; color: #FFFFFF;">See More</a>
+					</p>
+				</div>
+
+				<!-- To the right -->
+				<div style="float:right; width: 67%">
+					<iframe width="490" height="276" src="https://www.youtube.com/embed/lQSccDgKX_8?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div style="clear:both"></div>
 			</section>
 
 			<!-- Video Two -->
@@ -134,7 +199,9 @@
 					<p>
 						Hello this is text about how awesome carrots are. Will this got above or beside the video? It will be interesting to see. It definitely goes above the video. Got beside the video please. Why is that?
 					</p>
-					<a href="article-page.html;", style="text-decoration: underline; color: #FFFFFF;">See More</a>
+					<p>
+						<a href="article-page.html", style="text-decoration: underline; color: #FFFFFF;">See More</a>
+					</p>
 				</div>
 
 				<!-- To the right -->
@@ -143,6 +210,13 @@
 				</div>
 				<div style="clear:both"></div>
 			</section>
+
+			<div class="group-heading">
+				<a name="soil"></a>
+				<h1>
+					Soil
+				</h1>
+			</div>
 
 			<!-- Video Three -->
 			<section class="video-section">
@@ -156,7 +230,9 @@
 					<p>
 						Hello this is text about how awesome carrots are. Will this got above or beside the video? It will be interesting to see. It definitely goes above the video. Got beside the video please. Why is that?
 					</p>
-					<a href="article-page.html;", style="text-decoration: underline; color: #FFFFFF;">See More</a>
+					<p>
+						<a href="article-page.html", style="text-decoration: underline; color: #FFFFFF;">See More</a>
+					</p>
 				</div>
 
 				<!-- To the right -->
