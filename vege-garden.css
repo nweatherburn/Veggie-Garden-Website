@@ -93,3 +93,51 @@ footer
 	width: 980px;
 	box-shadow: 0 1px 5px 2px rgba(50, 50, 50, 0.5);
 }
+
+.like-article
+{
+	text-align: center;
+	float: right;
+}
+
+.like-article button
+{
+	border: none;
+	border-radius: 50px;
+	height: 28px;
+	width: 80px;
+	color: #333;
+	background-color: #FFFFFF;
+	box-shadow: 0 1px 5px 2px rgba(50, 50, 50, 0.5);
+}
+
+.like-article button:focus
+{
+	outline: 0;
+	box-shadow: 0 1px 5px 2px rgba(50, 50, 50, 0.5);
+}
+
+.unlike-article
+{
+	text-align: center;
+	float: right;
+}
+
+.unlike-article button
+{
+	border: none;
+	border-radius: 50px;
+	height: 28px;
+	width: 80px;
+	color: #FFFFFF;
+	background-color: #333333;
+	box-shadow: 0 1px 5px 2px rgba(50, 50, 50, 0.5);
+}
+
+.unlike-article button:focus
+{
+	outline: 0;
+	box-shadow: 0 1px 5px 2px rgba(50, 50, 50, 0.5);
+}
+
+

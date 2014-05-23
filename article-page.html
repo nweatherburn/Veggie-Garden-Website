@@ -4,11 +4,17 @@
 		<title>Guides</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="vege-garden.css">
+
+		<!-- CSS -->
 		<style type="text/css">
+			article
+			{
+				padding-top: 10px;
+			}
 			article section
 			{
-				padding: 20px 20px 20px 20px;
-				margin: 10px 0 10px 0;
+				padding: 20px 20px 10px 20px;
+				margin: 20px 0 20px 0;
 				box-shadow: 0 1px 5px 2px rgba(50, 50, 50, 0.5);
 			}
 			.article-title h1
@@ -20,6 +26,24 @@
 				border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 			}
 		</style>
+
+		<!-- JAVASCRIPT -->
+		<script type="text/javascript">
+			function likeArticle(element) {
+				var tag = document.getElementById("like-tag").textContent
+				var numPeople = parseInt(document.getElementById("number-of-people-liked").textContent)
+
+				if (tag == 'Like | ') {
+					document.getElementById("like-tag").textContent = "Unlike | "
+					document.getElementById("number-of-people-liked").textContent = numPeople + 1;
+					document.getElementById("like-button").className = "unlike-article";
+				} else {
+					document.getElementById("like-tag").textContent = "Like | "
+					document.getElementById("number-of-people-liked").textContent = numPeople - 1;
+					document.getElementById("like-button").className = "like-article";
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<header>
@@ -40,8 +64,14 @@
 					Planting Carrots
 				</h1>
 				<p>
-					Today we're going to take you through the process of planting carrots. <br> Some people are often nervous to plant carrots in their vege-gardens, however, by following this guide you'll quickly see that it's no more difficult than onions.
+					Today we're going to take you through the process of planting carrots. <br> Some people are often nervous to plant carrots in their vege-gardens, however, by following this guide you'll quickly see that it's no more difficult than onions.<br> Alright, let's get started. <br> Firstly you're going to need your carrot seeds. If you're planting carrots for the first time you may want to go with <em>rolly</em> carrots. Don't be alarmed when these come out round, they're meant to.
 				</p>
+				<div class="like-article" id="like-button">
+					<button onClick="likeArticle(this)">
+						<span id="like-tag">Like | </span><span id="number-of-people-liked">23</span>
+					</button>
+				</div>
+				<div style="clear:both;"></div>
 			</section>	
 		</article>
 		<footer>
