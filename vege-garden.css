@@ -104,6 +104,14 @@ article
 	color: #FFFFFF;
 }
 
+.article-subheading
+{
+	font-size: 18px;
+	line-height: 1.4;
+	margin: 0;
+	color: #FFFFFF;
+}
+
 section
 {
 	padding: 10px;
