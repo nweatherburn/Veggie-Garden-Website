@@ -80,6 +80,14 @@ section
 	border-bottom: 1px solid rgba(50, 50, 50, 0.5);
 }
 
+.article-subheading
+{
+	font-size: 18px;
+	line-height: 1.4;
+	margin: 0;
+	color: #333;
+}
+
 .group-heading
 {
 	color: #333;
@@ -149,7 +157,8 @@ p
 
 footer
 {
-	margin-top: 5px;
+	margin-top: 10px;
+	padding: 0;
 	color: #FFFFFF;
 	background-color: #63956C;
 	line-height:40px;

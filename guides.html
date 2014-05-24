@@ -36,11 +36,10 @@
 		<script type="text/javascript">
         	$(window).scroll(function(){
         		// Makes sure that the navbar on the side is always visible.
-        		if ($(window).scrollTop() > 146) {
-        			console.log('true');
+        		var position = $('aside').position().top
+        		if ($(window).scrollTop() > position) {
         			$('#side-navbar').addClass('sidebar-fixed');
         		} else {
-        			console.log('false');
         			$('#side-navbar').removeClass('sidebar-fixed');
         		}
         	});
@@ -48,7 +47,7 @@
 	</head>
 	<body>
 		<header>
-			<a href="guides.html"><img src="logo.png" style="padding-top: 10px; height: 70px;"></img></a>
+			<a href="guides.html"><img src="images/logo.png" style="padding-top: 10px; height: 70px;"></img></a>
 		</header>
 		<nav>
 			<ul>
@@ -74,13 +73,13 @@
 						<a href="#soil">Soil</a>
 					</li>
 					<li>
-						<a href="#">Fertilization</a>
+						<a href="#fertilization">Fertilization</a>
 					</li>
 					<li>
-						<a href="#">Irrigation</a>
+						<a href="#irrigation">Irrigation</a>
 					</li>
 					<li>
-						<a href="#">Tools</a>
+						<a href="#tools">Tools</a>
 					</li>
 				</ul>
 			</aside>
@@ -93,6 +92,29 @@
 					Vegetables
 				</h1>
 			</div>
+
+			<section class="video-section">
+				<!-- To the left -->
+				<div style="float: left; width: 32%;">
+					<div class="video-title">
+						<h1>
+							<a href="#">Broccoli</a>
+						</h1>
+					</div>
+					<p>
+						Broccoli is a fantastic plant to grow and even better to eat! Brocolli is often perceived to be a difficult plant to grow, but with these simple tips you'll see how this just isn't true. After this guide you'll be enjoying all the benefits of this superfood every month!
+					</p>
+					<p>
+						<a href="#", style="text-decoration: underline; color: #333;">See More</a>
+					</p>
+				</div>
+
+				<!-- To the right -->
+				<div style="float:right; width: 67%">
+					<img src="images/broccoli.png" style="height:276px; width:490px;"></img>
+				</div>
+
+			</section>
 
 			<section class="video-section">
 				<!-- To the left -->
@@ -112,11 +134,11 @@
 
 				<!-- To the right -->
 				<div style="float:right; width: 67%">
-					<iframe width="490" height="276" src="http://www.youtube.com/embed/lQSccDgKX_8?rel=0" frameborder="0" allowfullscreen></iframe>
+					<img src="images/carrots.png" style="height:276px; width:490px;"></img>
 				</div>
 			</section>
 
-			<!--- - - - - - - - Soil - - - - - - - -->
+			<!--- - - - - - - - Fruits - - - - - - - -->
 
 			<div class="group-heading">
 				<a name="fruits"></a>
@@ -143,7 +165,7 @@
 
 				<!-- To the right -->
 				<div style="float:right; width: 67%">
-					<iframe width="490" height="276" src="http://www.youtube.com/watch?v=XNEYoeS0POw?rel=0" frameborder="0" allowfullscreen></iframe>
+					<img src="images/tomatoes.png" style="height:276px; width:490px;"></img>
 				</div>
 			</section>
 
@@ -162,11 +184,11 @@
 				<div style="float: left; width: 32%">
 					<div class="video-title">
 						<h1>
-							<a href="3">Planting Carrots</a>
+							<a href="3">Choosing your soil</a>
 						</h1>
 					</div>
 					<p>
-						Choosing the right soil is crucial to 
+						Choosing the right soil is crucial to ensuring the success of your patio garden. This is a beginners guide to choosing the best soil for your setup. After reading this guide you'll be well on your way to optimizing the health of your plants!
 					</p>
 					<p>
 						<a href="#", style="text-decoration: underline; color: #333;">See More</a>
@@ -175,16 +197,21 @@
 
 				<!-- To the right -->
 				<div style="float:right; width: 67%">
-					<iframe width="490" height="276" src="http://www.youtube.com/watch?v=xA9wvLMSzQY?rel=0" frameborder="0" allowfullscreen></iframe>
+					<img src="images/soil.png" style="height:276px; width:490px"></img>
 				</div>
 			</section>
 		</article>
 
 		<div style="clear:both;"></div>
 
+		<!-- Footer -->
 		<footer>
-			<span style="float:left; padding: 0 0 0 5px; margin: 0">Nicholas Weatherburn</span>
-			<span style="float:right; padding: 0 5px 0 0; margin: 0">2692661 - nwea171</span>
+			<span style="float:left; margin: 0; padding: 10px 0 0 5px;">
+				<a href="guides.html">
+					<img src="images/logo.png" style="height: 50px;"></img>
+				</a>
+			</span>
+			<span style="float:right; width:150px; margin: 0; padding: 15px 15px 0 0; line-height: 1.4; text-align: right; font-size: 14px;">Nicholas Weatherburn nwea171 - 2692661</span>
 			<div style="clear:both;"></div>
 		</footer>
 	</body>
