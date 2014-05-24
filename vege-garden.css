@@ -60,6 +60,45 @@ nav a
 	border-right: 1px solid #FFFFFF;
 }
 
+/* The basis for the following sidebar css was found at: "http://startbootstrap.com/templates/css/simple-sidebar.css" */
+
+.sidebar {
+	float: left;
+	width: 22%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar li {
+	line-height: 40px;
+	text-indent: 20px;
+}
+
+.sidebar li a {
+	color: #FFFFFF;
+	display: block;
+	text-decoration: none;
+}
+
+.sidebar li a:hover {
+	color: #fff;
+	background-color: #68BA76;
+	text-decoration: none;
+}
+
+.sidebar-relative
+{
+	position: relative;
+}
+
+.sidebar-fixed
+{
+	position: fixed;
+	top: 0;
+	width: 216px;
+}
+
 article
 {
 	color: #FFFFFF;
